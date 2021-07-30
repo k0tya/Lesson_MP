@@ -78,11 +78,11 @@ def print_values(result):
     print('Максимальная волатильность:')
     for item in result['max_top3_values'].items():
         print(f'{item[0]} - {item[1]}%')
-    print('')
+    print('*'*20)
     print('Минимальная волатильность:')
     for item in result['min_top3_values'].items():
         print(f'{item[0]} - {item[1]}%')
-    print('')
+    print('*'*20)
     print('Нулевая волатильность:')
     for item in result['zero_values_sorted_by_secid'].items():
         print(f'{item[0]}', end=', ')
